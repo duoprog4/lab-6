@@ -1,5 +1,7 @@
 <html>
 <body>
+
+<table border="1" cellpadding="5" cellspacing="0">
 <?php
 $number = $_POST["size"];
 echo "<tr><th></th>";

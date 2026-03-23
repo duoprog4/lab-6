@@ -1,17 +1,21 @@
-function alert_paragraph_control() {
-    let r = document.getElementById("border_R").value;
-    let g = document.getElementById("border_G").value;
-    let b = document.getElementById("border_B").value;
-    let width = document.getElementById("border_width").value;
-    let background_r = document.getElementById("bg_R").value;
-    let background_g = document.getElementById("bg_G").value;
-    let background_b = document.getElementById("bg_B").value;
-    let paragraph = document.getElementById("paragraph");
+function alert_paragraph_color() {
+    const r = Number(document.getElementById("border_R").value);
+    const g = Number(document.getElementById("border_G").value);
+    const b = Number(document.getElementById("border_B").value);
+    const width = Number(document.getElementById("border_width").value);
+
+    const bgR = Number(document.getElementById("bg_R").value);
+    const bgG = Number(document.getElementById("bg_G").value);
+    const bgB = Number(document.getElementById("bg_B").value);
+
+    const paragraph = document.getElementById("paragraph");
 
     paragraph.style.borderColor = `rgb(${r}, ${g}, ${b})`;
     paragraph.style.borderWidth = `${width}px`;
-    paragraph.style.backgroundColor = `rgb(${background_r}, ${background_g}, ${background_b})`;
+    paragraph.style.borderStyle = "solid";
+    paragraph.style.backgroundColor = `rgb(${bgR}, ${bgG}, ${bgB})`;
 }
+
 function validate() {
     let password1 = document.getElementById("pass1").value;
     let password2 = document.getElementById("pass2").value;
