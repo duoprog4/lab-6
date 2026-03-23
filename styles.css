@@ -1,0 +1,12 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-image: url("background.jpg"); /* credit https://wallpaperaccess.com/one-piece-marineford */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.box {
+  border: 2px solid black;
+  border-radius: 8px;
+}
